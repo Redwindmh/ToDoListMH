@@ -17,7 +17,10 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  background-color: var(--clr-primary);
+  /* background-color: var(--clr-primary); */
+  background: url(./images/165326-cyberpunk_2077-cyberpunk-building-atmosphere-skyscraper-x750.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
   color: var(--clr-light);
 
   display: grid;
@@ -32,8 +35,9 @@ body {
   text-align: center;
   font-size: calc(7vw + 2rem);
   font-weight: 900;
-  color: rgba(61, 27, 27, 0.1);
+  color: rgba(61, 27, 27, 0.5);
   letter-spacing: 1px;
+  text-shadow: red 1px 0 10px;
   margin: 0.2em 0 0.5em;
 }
 
@@ -53,12 +57,18 @@ body {
 }
 
 .list-name:hover {
-  opacity: 0.7;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  color: black;
+  text-shadow: white 1px 0 15px;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: transform 300ms ease-in;
+  -webkit-transition: transform 300ms ease-in;
+  -moz-transition: transform 300ms ease-in;
+  -ms-transition: transform 300ms ease-in;
+  -o-transition: transform 300ms ease-in;
 }
 
 form {
@@ -89,7 +99,7 @@ form {
 }
 
 .btn.delete {
-  opacity: 0.7;
+  opacity: 0.9;
   font-size: 1rem;
   transition: color 250ms ease-in;
   -webkit-transition: color 250ms ease-in;
@@ -99,7 +109,10 @@ form {
 }
 
 .btn.delete:hover {
-  color: var(--clr-warning);
+  opacity: unset;
+  color: black;
+  font-weight: 700;
+  text-shadow: rgba(248, 3, 3, 0.856) 1px 0 20px;
 }
 
 .new {
@@ -130,10 +143,15 @@ form {
 
 .todo-list {
   --spacer: 2rem;
-
   grid-area: active;
   background: var(--clr-light);
+  opacity: 0.9;
   color: var(--clr-dark);
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
 }
 
 .todo-header {
@@ -142,6 +160,9 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  opacity: 0.9;
 }
 
 .list-title {
