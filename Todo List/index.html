@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>To-do List</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,9 +13,9 @@
     <div class="all-tasks">
       <h2 class="task-list-title">My lists</h2>
       <ul class="task-list">
-        <li class="active-list">Programming</li>
-        <li>Gaming</li>
-        <li>Work</li>
+        <li class="active-list list-name">Programming</li>
+        <li class="list-name">Gaming</li>
+        <li class="list-name">Work</li>
       </ul>
 
       <form action="">
@@ -25,7 +25,7 @@
           placeholder="new list name"
           aria-label="new list name"
         />
-        <button class="btn list" aria-label="create new list">+</button>
+        <button class="btn create" aria-label="create new list">+</button>
       </form>
     </div>
 
@@ -62,11 +62,11 @@
           <form action="">
             <input
               type="text"
-              class="new list"
+              class="new task"
               placeholder="new task name"
               aria-label="new task name"
             />
-            <button class="btn task" aria-label="create new task">+</button>
+            <button class="btn create" aria-label="create new task">+</button>
           </form>
         </div>
         <div class="delete-ish">
