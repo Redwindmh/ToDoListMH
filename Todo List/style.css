@@ -64,11 +64,11 @@ body {
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
-  transition: transform 300ms ease-in;
-  -webkit-transition: transform 300ms ease-in;
-  -moz-transition: transform 300ms ease-in;
-  -ms-transition: transform 300ms ease-in;
-  -o-transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, color 300ms ease-in;
+  -webkit-transition: transform 300ms ease-in, color 300ms ease-in;
+  -moz-transition: transform 300ms ease-in, color 300ms ease-in;
+  -ms-transition: transform 300ms ease-in, color 300ms ease-in;
+  -o-transition: transform 300ms ease-in, color 300ms ease-in;
 }
 
 form {
